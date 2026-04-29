@@ -70,3 +70,22 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+function printGryffindors({ firstName, lastName, house }) {
+  if (house === "Gryffindor") {
+    console.log(`${firstName} ${lastName}`);
+  }
+}
+
+function printTeacherPets({ firstName, lastName, occupation, pet }) {
+  if (occupation === "Teacher" && pet) {
+    console.log(`${firstName} ${lastName}`);
+  }
+}
+
+console.log("\nEach wizzard in House Gryffindors");
+console.log("==================================");
+hogwarts.forEach(printGryffindors);
+console.log("\nEach teacher with a pet");
+console.log("==================================");
+hogwarts.forEach(printTeacherPets);
