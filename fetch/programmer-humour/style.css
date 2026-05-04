@@ -1,0 +1,25 @@
+body {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  height: auto;
+  border: solid 2px black;
+}
+
+#comic-alt {
+  margin-top: 16px;
+  font-style: italic;
+  color: black;
+  text-align: center;
+  font-size: 1.4rem;
+}
