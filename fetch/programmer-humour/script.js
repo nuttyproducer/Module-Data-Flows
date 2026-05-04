@@ -19,6 +19,7 @@ function fetchComic() {
     .catch((error) => {
       // Error handeling
       console.error("Fetch error:", error);
+      alert("Failed to load comic. Check console for details."); // Extra error handeling popup on screen
     });
 }
 
