@@ -17,6 +17,8 @@ function addDogsImages() {
     });
 }
 
+addDogsImages();
+
 // Add a click listener to the add button
 
 // Add a click listener to the clear button
