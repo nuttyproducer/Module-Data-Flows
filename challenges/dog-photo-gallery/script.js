@@ -18,7 +18,9 @@ function addDogsImages() {
       const dogImage = document.createElement("img");
       dogImage.src = data.message;
 
-      dogGallery.append(dogImage);
+      const li = document.createElement("li");
+      li.append(dogImage);
+      dogGallery.append(li);
     });
 }
 
