@@ -125,7 +125,6 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
-
 /* Credits
 ------------------------------------------------------------------------------*/
 .info {
@@ -155,6 +154,11 @@
   letter-spacing: 2px;
 }
 
+.city-name {
+  color: gold !important;
+  font-weight: bold;
+}
+
 /* Controls
 ------------------------------------------------------------------------------*/
 .controls {
@@ -165,7 +169,9 @@
 .search,
 .search__input,
 .btn {
-  transition: 0.5s background-color, 0.5s color;
+  transition:
+    0.5s background-color,
+    0.5s color;
 
   padding: 5px 10px;
   border: none;
