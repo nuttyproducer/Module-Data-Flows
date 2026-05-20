@@ -13,8 +13,6 @@ function addDogsImages() {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-
       const dogImage = document.createElement("img");
       dogImage.src = data.message;
 
