@@ -21,6 +21,10 @@ function addDogsImages() {
       const li = document.createElement("li");
       li.append(dogImage);
       dogGallery.append(li);
+
+      // Keep new append images visible in the carrousel
+
+      dogGallery.scrollLeft = dogGallery.scrollWidth;
     });
 }
 
