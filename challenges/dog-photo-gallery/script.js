@@ -14,11 +14,21 @@ function addDogsImages() {
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
+
+      const dogImage = document.createElement("img");
+      dogImage.src = data.message;
+
+      dogGallery.append(dogImage);
     });
 }
 
+// Loads the first dog directly when page loads.
 addDogsImages();
 
 // Add a click listener to the add button
+addButton.addEventListener("click", addDogsImages);
 
 // Add a click listener to the clear button
+resetButton.addEventListener("click", () => {
+  dogGallery.innerHTML = "";
+});
