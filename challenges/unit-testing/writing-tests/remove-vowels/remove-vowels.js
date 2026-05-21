@@ -5,11 +5,11 @@ function removeVowels(word) {
 
   characters.forEach(function (character) {
     if (
-      character !== "a" &&
-      character !== "o" &&
-      character !== "i" &&
-      character !== "e" &&
-      character !== "u"
+      character.toLowerCase() !== "a" &&
+      character.toLowerCase() !== "o" &&
+      character.toLowerCase() !== "i" &&
+      character.toLowerCase() !== "e" &&
+      character.toLowerCase() !== "u"
     ) {
       result.push(character);
     }
@@ -26,4 +26,7 @@ module.exports = removeVowels;
   let result = removeVowels('samuel');
 
   what is the value of result?
+
+  Result: sml
+
 */
